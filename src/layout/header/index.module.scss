@@ -1,0 +1,46 @@
+.main-header {
+  margin-top: 60px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: 'Lora', serif !important;
+  color: #444;
+
+  position: relative;
+
+  .header-title {
+    &__sm {
+      position: absolute;
+      top: 2%;
+      left: 42%;
+      z-index: 999;
+
+      h3 {
+        font-size: 3rem;
+        font-family: inherit;
+      }
+    }
+
+    &__lg {
+      position: absolute;
+      top: 5%;
+      left: 40%;
+      z-index: 999;
+
+      h1 {
+        font-family: inherit;
+        font-size: 6rem;
+      }
+    }
+  }
+
+  .img-big {
+    margin-top: 75px;
+
+    position: relative;
+    width: 100%;
+    height: 650px;
+  }
+}

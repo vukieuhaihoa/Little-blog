@@ -11,22 +11,30 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "clsx": "^1.1.1",
     "i18next": "^21.1.1",
     "next": "11.1.2",
     "next-i18next": "^8.8.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "sass": "^1.42.1"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@storybook/addon-actions": "^6.3.8",
+    "@storybook/addon-controls": "^6.3.8",
+    "@storybook/addon-docs": "^6.3.8",
     "@storybook/addon-essentials": "^6.3.8",
     "@storybook/addon-links": "^6.3.8",
+    "@storybook/addon-viewport": "^6.3.8",
     "@storybook/react": "^6.3.8",
     "@types/react": "17.0.24",
     "@typescript-eslint/eslint-plugin": "^4.31.2",
     "@typescript-eslint/parser": "^4.31.2",
     "babel-loader": "^8.2.2",
+    "babel-plugin-import": "^1.13.3",
     "eslint": "^7.32.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-next": "11.1.2",

@@ -1,0 +1,212 @@
+.main-footer {
+  width: 100%;
+  height: auto;
+
+  padding: 50px 40px;
+
+  background-color: #010101;
+
+  display: flex;
+  flex-direction: column;
+
+  color: #fff;
+
+  &-top {
+    position: relative;
+    z-index: 0;
+    .title {
+      position: relative;
+      z-index: 1;
+      margin-bottom: 25px;
+      line-height: 33px;
+
+      h5 {
+        text-transform: uppercase;
+        font-weight: 700;
+        padding-right: 15px;
+        font-size: 1.8rem;
+        background-color: #010101;
+
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+      }
+
+      &::after {
+        content: ' ';
+        position: absolute;
+        top: 13px;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background-color: rgba(100, 100, 100, 0.35);
+        z-index: 0;
+        box-sizing: border-box;
+      }
+    }
+    &__about-us {
+      .content {
+        p {
+          line-height: 1.875;
+          font-size: 1.3rem;
+        }
+      }
+
+      .bottom {
+        margin-top: 20px;
+      }
+    }
+
+    &__latest-post {
+      margin-bottom: 50px;
+
+      .posts-box {
+        .post {
+          height: 115px;
+
+          &-sumary {
+            margin-bottom: 10px;
+          }
+
+          &-img {
+            float: left;
+            width: 40%;
+
+            display: block;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 15px;
+            text-align: center;
+
+            & > a {
+              display: block;
+              position: relative;
+              z-index: 1;
+              overflow: hidden;
+              background: #010101;
+
+              img {
+                width: 100%;
+                height: 100%;
+                opacity: 1;
+                transform: scale3d(1, 1, 1);
+                transition: all 0.3s ease;
+                backface-visibility: hidden;
+
+                &:hover {
+                  opacity: 0.8;
+                  transform: scale3d(1.05, 1.05, 1.05);
+                }
+              }
+            }
+          }
+
+          &-detail {
+            float: left;
+            width: 60%;
+            padding-left: 15px;
+
+            h3 {
+              font-size: 1.4rem;
+              width: 100%;
+              margin: 0 0 15px;
+              line-height: 1.33;
+              font-weight: 400;
+              letter-spacing: -0.6px;
+              white-space: normal;
+              margin-bottom: 15px;
+              color: #767676;
+
+              &:hover {
+                color: #fff;
+              }
+            }
+
+            ul {
+              position: relative;
+              z-index: 1;
+              margin: 0 0 15px;
+              padding: 15px 0 0;
+              min-height: 33px;
+              list-style: none;
+              font-size: 12px;
+              color: #868686;
+
+              padding-top: 0;
+              min-height: 18px;
+
+              li {
+                margin-right: 25px;
+
+                svg {
+                  margin-right: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__contact-us {
+    }
+  }
+
+  &-bottom {
+    margin-top: 30px !important;
+
+    .logo-wrapper {
+      a {
+        display: inline-block;
+        margin-bottom: 5px;
+        letter-spacing: -1.1px;
+        font-size: 3.8rem;
+        font-weight: 700;
+        color: #fff !important;
+      }
+
+      .copy-right {
+        font-size: 1.3rem;
+        line-height: 1.8;
+      }
+    }
+
+    .nav {
+      margin-top: 30px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      color: #fff;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+          display: inline-block;
+          margin-right: 20px;
+          font-size: 18px;
+
+          a {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.clearfix {
+  &::before {
+    display: table;
+    content: ' ';
+  }
+
+  &::after {
+    clear: both;
+    display: table;
+    content: ' ';
+  }
+}
