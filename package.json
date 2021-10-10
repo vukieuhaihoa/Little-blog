@@ -13,12 +13,20 @@
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
+    "@types/dompurify": "^2.3.1",
+    "@types/draft-convert": "^2.1.4",
+    "@types/draft-js": "^0.11.5",
+    "@types/react-draft-wysiwyg": "^1.13.3",
     "clsx": "^1.1.1",
+    "draft-convert": "^2.1.12",
+    "draft-js": "^0.11.7",
     "i18next": "^21.1.1",
+    "isomorphic-dompurify": "^0.15.0",
     "next": "11.1.2",
     "next-i18next": "^8.8.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-draft-wysiwyg": "^1.14.7",
     "sass": "^1.42.1"
   },
   "devDependencies": {

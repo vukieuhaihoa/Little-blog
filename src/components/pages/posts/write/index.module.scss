@@ -57,6 +57,33 @@
         color: white;
         font-size: 1.6rem;
       }
+
+      .editor-and-preview {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .editor-wrapper {
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid #ccc;
+      }
+
+      .editor {
+        background-color: lightgray;
+        padding: 1rem;
+        border: 1px solid #ccc;
+        font-size: 2rem;
+      }
+
+      .preview {
+        display: block;
+        width: 100%;
+        font-size: 1.6rem;
+        margin-top: 50px;
+      }
     }
   }
 }

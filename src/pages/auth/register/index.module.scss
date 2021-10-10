@@ -1,0 +1,71 @@
+.login {
+  width: 100%;
+  margin: 0 auto;
+  height: calc(100vh - 0px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url('https://images.pexels.com/photos/768473/pexels-photo-768473.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+  background-size: cover;
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+      font-size: 5rem;
+    }
+    .form {
+      width: 100%;
+
+      &-group {
+        margin: 10px auto;
+        
+        label {
+          display: block;
+          font-size: 2rem;
+        }
+
+        input {
+          color: gray;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          width: 100%;
+          height: 30px;
+          padding: 20px;
+          border: none;
+          border-bottom: 1px solid lightgray;
+          font-size: 1.6rem;
+          &:focus {
+            outline: none;
+          }
+        }
+
+        &-btn {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          font-size: 1.6rem;
+
+          .btn-login {
+            font-size: 1.6rem;
+            background-color: lightcoral !important;
+            margin-bottom: 10px;
+          }
+
+          .btn-register {
+            font-size: 1.6rem;
+            background-color: teal !important;
+            margin-bottom: 10px;
+            color: #FFF;
+          }
+        }
+      }
+    }
+  }
+}
